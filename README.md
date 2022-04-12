@@ -4,28 +4,31 @@ This CLI takes in a series of inputs and writes them to a JSON file.
 
 # Installation
 
-This version of the CLI is backed by `pipenv`
+This version of the cli is created using `pip` and a virtual environment.
 
-Download the latest version of `pipenv` from [here](https://pypi.org/project/pipenv/)
+We like to use `pyenv` for the virtual environment. You can install it with `brew install pyenv` or `apt-get install python-pyenv`.
 
-Install dependencies:
-
-```
-pipenv install && pipenv shell
-```
-
-This will install the dependnecies and set up the environment for the CLI.
-
-Download the current version of the CLI:
 
 ```bash
-pip install -e .
+$ pyenv install 3.8.3 
 ```
 
-This will download `json-cli` and you will now be able to run
+Use the 3.8.3 version of Python.
 
 ```bash
-json-cli write --help
+pyenv virtualenv --copies 3.8.3 json-creator-pip
+```
+
+This will create a virtual environment inside this folder. `pyenv` stores these as shims and then links them to the actual Python version.
+
+```bash
+pyenv shell json-creator-pip
+```
+
+This will set the virtual environment as the current one. You can now install packages inside the virtual environment.
+
+```bash
+$ pip install -r requirements.txt
 ```
 
 # Development
