@@ -51,6 +51,7 @@ Click uses `decorators` to create a CLI. This is a Python decorator that allows 
         }
     ]
 }
-```p
+```
+
 
 
