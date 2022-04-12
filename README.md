@@ -34,7 +34,6 @@ The main part of the application begins at the `setup.py` file which shows `pip`
 
 Click uses `decorators` to create a CLI. This is a Python decorator that allows you to create a CLI while click handles the command line arguments.
 
-
 ## Schema for the inputs
 
 ```json
